@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_blog/pages/user/login_page.dart';
+import 'package:flutter_blog/pages/user/join_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,10 +9,10 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       //라우터 설계 필요없음, GetX 사용 예정
-      home: LoginPage(),
+      home: JoinPage(),
     );
   }
 }
